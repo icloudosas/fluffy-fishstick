@@ -1,1 +1,10 @@
-render
+services:
+  - name: Legal Trades & Mining
+    type: web
+    env: node
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    plan: free
+    envVars:
+      - key: NODE_ENV
+        value: production
